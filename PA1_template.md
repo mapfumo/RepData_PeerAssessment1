@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 
 ## Loading and preprocessing the data
@@ -52,7 +57,7 @@ ggplot(total_steps, aes(steps)) + geom_histogram(fill = "darkgreen", col="grey",
     theme_bw()
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-1-1.png) 
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png) 
 
 #### 2. Mean and median
 
@@ -84,7 +89,7 @@ ggplot(pattern, aes(x=Interval, y=Average_Steps)) + geom_line(col="darkgreen")+
   xlab("5 Minute Interval")+ylab("Average Number of steps") + labs(title = expression("Figure 2 - Daily Activity")) + theme_bw()
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 
 #### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -151,7 +156,7 @@ ggplot(total_steps_1, aes(steps)) + geom_histogram(fill = "steelblue", col="grey
     theme_bw()
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png) 
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
 
 The mean and median (after replacing NAs)
 
@@ -250,7 +255,7 @@ ggplot(average_summary, aes(interval, steps)) + geom_line(color = "steelblue") +
     facet_wrap(~day, ncol = 1) + labs(title = expression("Figure 4"))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png) 
+![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png) 
 
 There is an overall higher number of steps taken over the weekend.
 
